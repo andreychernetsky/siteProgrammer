@@ -31,13 +31,14 @@
   &__link {
     text-decoration: none;
     color: var(--black);
+     &:hover {
+    color: #ffc222;
+  }
   }
   &__link:active {
     color: rgba(255, 255, 255, .3);
   }
-  &__link:hover {
-    border-color: #ffc222;
-  }
+ 
 }
 
 
