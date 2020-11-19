@@ -24,6 +24,34 @@ btn.addEventListener('click',function () {
     }
   }
 })();
+// .accordion2
+
+{
+  const accButton = document.querySelectorAll('.accordion2__button');
+  accButton.forEach(btn => btn.addEventListener('click',()=>{
+    const openButton = btn.nextElementSibling.classList.contains('accordion__panel--open');
+    if(openButton) {
+      closeAcc(btn.nextElementSibling);
+    } else {
+      accButton.forEach(x=>closeAcc(x.nextElementSibling));
+      openAcc(btn.nextElementSibling);
+    }
+  }))
+
+  function openAcc(item) {
+    item.classList.add('accordion__panel--open');
+    item.style.maxHeight = item.scrollHeight+'px';
+    item.style.padding = '1.rem 1.5rem 1rem 1.5rem'
+  }
+
+  function closeAcc(item) {
+    item.classList.remove('accordion__panel--open');
+    item.style.maxHeight = '0';
+    item.style.paddin = '0 1.5rem 0 1.5rem';
+  }
+
+
+}
 
 // прокрутка по якорям
 (()=> {
