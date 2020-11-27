@@ -1,16 +1,11 @@
 .video {
   width: 100%;
+  padding-top: 30px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  &__inner {
-    display: flex;
-    justify-content: space-between;
-    max-width: 100%;
-    width: 100%;
-    margin-bottom: 3%;
-    flex-wrap: wrap;
-  }
+  justify-content: space-between;
+  margin-bottom: 3%;
+  flex-wrap: wrap;
+
   &__wrapp {
     display: block;
     width:20%;
@@ -25,7 +20,7 @@
 
 @media (max-width: 684px) {
 
-  .video {
+ .video {
     display: flex;
     flex-direction: column;
     align-items: center;

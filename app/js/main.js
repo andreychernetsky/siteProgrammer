@@ -13,7 +13,7 @@ btn.addEventListener('click',function () {
 })();
 
 // accordion
-(()=>{
+/*(()=>{
   const acc = document.getElementsByClassName("accordion__header");
   let i;
 
@@ -23,11 +23,11 @@ btn.addEventListener('click',function () {
       this.nextElementSibling.classList.toggle("show");
     }
   }
-})();
+})();*/
 // .accordion2
 
 {
-  const accButton = document.querySelectorAll('.accordion2__button');
+  const accButton = document.querySelectorAll('.accordion__button');
   accButton.forEach(btn => btn.addEventListener('click',()=>{
     const openButton = btn.nextElementSibling.classList.contains('accordion__panel--open');
     if(openButton) {
@@ -54,7 +54,7 @@ btn.addEventListener('click',function () {
 }
 
 // прокрутка по якорям
-(()=> {
+ {
   // // собираем все якоря; устанавливаем время анимации и количество кадров
 // const anchors = [].slice.call(document.querySelectorAll('a[href*="#"]')),
 //       animationTime = 300,
@@ -152,12 +152,9 @@ btn.addEventListener('click',function () {
       })
     })
   }
-})();
+};
 
 
-(()=>{
-
-})();
 
 
 //кнопка на вверх
