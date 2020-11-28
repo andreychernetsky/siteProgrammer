@@ -12,7 +12,7 @@
     top: 9%;
     left: 0;
     right: 0;
-    background-color:black;
+    background-color: black;
     &__list {
       display: flex;
       flex-direction: column;
@@ -111,6 +111,14 @@
 @media (max-width: 770px) {
   .section {
     padding: 40px 0;
+    max-width: 100%;
+    &__title {
+      font-size:1.6rem;
+    }
+    &__subtitle {
+
+    }
+
   }
 }
 
@@ -146,19 +154,19 @@
       margin-bottom: 7px;
     }
 
-}
+  }
 
-@media (max-width: 480px) {
+  @media (max-width: 480px) {
 
-  .main-header {
-    &__image {
-      background-image: url("../img/bgJs.jpg");
-      background-repeat: no-repeat;
-      background-position: center center;
-      background-size: cover;
-      max-width: 100%;
+    .main-header {
+      &__image {
+        background-image: url("../img/bgJs.jpg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        max-width: 100%;
 
+      }
     }
   }
-}
 }
