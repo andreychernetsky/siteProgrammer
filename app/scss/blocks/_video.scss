@@ -1,33 +1,37 @@
 .video {
+  margin: auto;
   width: 100%;
+  max-width: 900px;
   padding-top: 30px;
-  display: flex;
-  justify-content: space-between;
   margin-bottom: 3%;
-  flex-wrap: wrap;
 
   &__wrapp {
-    display: block;
-    width:20%;
-    margin: 0 3px;
+    display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
   }
   &__item {
     display: block;
     max-width: 100%;
+    padding-top: 5px;
   }
 }
 
-@media (max-width: 684px) {
-
- .video {
+@media (max-width: 784px) {
+  .video {
+   width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     &__wrapp {
-      display: block;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       width: 100%;
-      margin: 4% 1%;
+      margin: 4px 1px;
     }
+   &__item {
+     width: 100%;
+   }
   }
 }
