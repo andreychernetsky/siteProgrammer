@@ -21,5 +21,13 @@
   },
   "dependencies": {
     "slick-carousel": "^1.8.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andreychernetsky/siteProgrammer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/andreychernetsky/siteProgrammer/issues"
+  },
+  "homepage": "https://github.com/andreychernetsky/siteProgrammer#readme"
 }
